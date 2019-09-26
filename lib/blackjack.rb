@@ -46,8 +46,8 @@ def hit?(current_total)
     return new_total
   elsif input != "s" || input != "h"
     invalid_command
+    return current_total
   end
-  current_total
 end
 
 def invalid_command
