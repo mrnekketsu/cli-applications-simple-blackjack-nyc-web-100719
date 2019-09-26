@@ -44,7 +44,7 @@ def hit?(current_total)
   elsif input == "h" 
     new_total = current_total + deal_card
     return new_total
-  elsif input != ("h" || "s")
+  elsif input != "h" || "s"
     invalid_command
     return current_total
   end
